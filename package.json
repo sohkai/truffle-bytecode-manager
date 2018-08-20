@@ -36,6 +36,7 @@
     "prettier": "^1.14.2"
   },
   "scripts": {
+    "prepublishOnly": "npm install",
     "lint": "eslint *.js lib/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
