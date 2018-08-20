@@ -16,8 +16,11 @@
     "truffle",
     "solidity"
   ],
-  "bin": "./bin.js",
+  "bin": {
+    "truffle-bytecode": "./bin.js"
+  },
   "dependencies": {
+    "columnify": "^1.5.4",
     "truffle-extract": "^1.1.0",
     "yargs": "^12.0.1"
   },
@@ -33,7 +36,7 @@
     "prettier": "^1.14.2"
   },
   "scripts": {
-    "lint": "eslint *.js",
+    "lint": "eslint *.js lib/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
